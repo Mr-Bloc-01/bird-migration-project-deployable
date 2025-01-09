@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird AI Options</title>
+  <style>
+    body {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .options-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .option-card {
+      background-color: #34495e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .option-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .option-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #ecf0f1;
+    }
+
+    .option-card p {
+      font-size: 1rem;
+      color: #bdc3c7;
+      margin-bottom: 20px;
+    }
+
+    .option-card a {
+      padding: 10px 20px;
+      background-color: #2980b9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .option-card a:hover {
+      background-color: #3498db;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bird AI Tool Options</h1>
+
+  <div class="options-container">
+    <!-- Option 1: Predict Migration Pattern -->
+    <div class="option-card">
+      <h2>Predict Migration Pattern</h2>
+      <p>Use our AI model to predict bird migration patterns based on temperature and wind speed changes.</p>
+      <a href="migration-prediction.html">Start Prediction</a>
+    </div>
+
+    <!-- Option 2: Identify Bird Species -->
+    <div class="option-card">
+      <h2>Find Bird Species</h2>
+      <p>Upload an image of a bird and let our AI model identify its species with high accuracy.</p>
+      <a href="bird-prediction.html">Identify Bird</a>
+    </div>
+
+    <!-- Option 3: Upload Bird Data -->
+    <div class="option-card">
+      <h2>Upload Bird Data</h2>
+      <p>Help us improve our models by uploading your bird observation data for research purposes.</p>
+      <a href="upload-data.html">Upload Data</a>
+    </div>
+  </div>
+
+</body>
+</html>

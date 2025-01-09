@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird Migration AI</title>
+  <style>
+    body {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      background-color: #34495e;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      color: #ecf0f1;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #bdc3c7;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 1rem;
+      color: #ecf0f1;
+      margin-bottom: 5px;
+    }
+
+    input[type="float"] {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #34495e;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      background-color: #ecf0f1;
+      color: #2c3e50;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #2980b9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    button:hover {
+      background-color: #3498db;
+    }
+
+    .info-section {
+      background-color: #3b4b58;
+      padding: 20px;
+      border-radius: 10px;
+      color: #bdc3c7;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Bird Migration Predictor</h1>
+    <p>Discover where birds will migrate based on environmental changes. Input the temperature change and wind speed variation to predict migration patterns using AI.</p>
+
+    <form id="input-form">
+      <label for="temperature">Change In Temperature (°C):</label>
+      <input type="float" id="temperature" placeholder="Enter temperature change" required>
+      
+      <label for="wind_speed">Change in Wind Speed (m/s):</label>
+      <input type="float" id="wind_speed" placeholder="Enter wind speed change" required>
+      
+      <button type="submit">Predict Migration</button>
+    </form>
+
+    <div class="info-section">
+      <h3>How Does It Work?</h3>
+      <p>Our AI model uses your input data about temperature and wind speed changes to predict bird migration patterns. Based on historical data, we provide accurate paths that birds are likely to follow.</p>
+      <p>After submitting the form, you'll be redirected to a map showing the predicted migration path.</p>
+    </div>
+  </div>
+
+  <script src="homeScript.js"></script>
+</body>
+</html>
