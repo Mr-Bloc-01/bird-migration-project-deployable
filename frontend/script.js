@@ -47,16 +47,21 @@ function fetchAndPlotMigrationPath() {
       // create an array of all lat and lng points
       var migrationPath = [];
 
-      for(let i=0; i < 3000; i++){
+      for(let i=0; i < 90; i++){
         data = migrationData[i].split("/");       // ex: ["1.0", "1.0", "84.03", "34.44"]
 
         const rawDataDiv = document.getElementById("raw-data");
         rawDataDiv.textContent = data;
 
+        // grab the month and day
+        var day = parseInt(data[1], 10).toString();
+        var month = parseInt(data[0], 10).toString();
+
         let point = [parseFloat(data[3]), parseFloat(data[2])]; // create the point for the polyine
         migrationPath.push(point);                              // add the point to the polyline
 
         var marker = L.marker([parseFloat(data[3]), parseFloat(data[2])]).addTo(map);
+        marker.bindPopup(month + "/" + day).openPopup();
       }
 
       // Plot the migration path on the map
