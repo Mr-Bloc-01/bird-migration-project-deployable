@@ -1,2 +1,1 @@
-## ToDo:
-    - Practise for GVRSF
+# bird migration app backend code
